@@ -32,7 +32,7 @@ services:
         volumes:
             - ./dags:/usr/local/airflow/dags
             - ./logs:/usr/local/airflow/logs
-            - ~/docker-certs:/var/docker_certs
+            - /home/ubuntu/docker-certs:/var/docker_certs
             - type: bind
               source: ./config/airflow.cfg
               target: /usr/local/airflow/airflow.cfg
